@@ -2,7 +2,7 @@
 //  ThirdViewController.swift
 //  HackwichFour
 //
-//  Created by CM Student on 2/11/20.
+//  Created by CM Student on 2/13/20.
 //  Copyright © 2020 Steven Chapman. All rights reserved.
 //
 
@@ -10,14 +10,17 @@ import UIKit
 
 class ThirdViewController: UIViewController {
 
-    @IBOutlet weak var ThirdButtonPressed: UILabel!
+    @IBOutlet weak var ThirdLabelPressed: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.ThirdButtonPressed.text = "My Favorite Foods"
+        self.ThirdLabelPressed.text = "My Favorite Foods"
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func ColoredButtonPressed(_ sender: Any) {
+    @IBAction func ColorChangingButtonPressed(_ sender: Any) {
+    
+            self.view.backgroundColor = UIColor.green
+        
     }
     
     /*
